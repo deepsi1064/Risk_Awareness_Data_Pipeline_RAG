@@ -1,163 +1,95 @@
 file_name,record_id,error_type,column_name,description
-transactions.csv,T1,NEGATIVE_VALUE,amount,Amount negative
-transactions.csv,T3,NEGATIVE_VALUE,amount,Amount negative
-transactions.csv,T4,NULL_VALUE,amount,Amount missing
-transactions.csv,T10,NULL_VALUE,amount,Amount missing
-transactions.csv,T14,NULL_VALUE,amount,Amount missing
-transactions.csv,T16,NEGATIVE_VALUE,amount,Amount negative
-transactions.csv,T24,INVALID_FORMAT,timestamp,Wrong date format
-transactions.csv,T30,NULL_VALUE,amount,Amount missing
-transactions.csv,T39,NULL_VALUE,amount,Amount missing
-transactions.csv,T42,INVALID_FORMAT,timestamp,Wrong date format
-transactions.csv,T47,NEGATIVE_VALUE,amount,Amount negative
-transactions.csv,T52,NEGATIVE_VALUE,amount,Amount negative
-transactions.csv,T70,NEGATIVE_VALUE,amount,Amount negative
-transactions.csv,T88,NEGATIVE_VALUE,amount,Amount negative
-transactions.csv,T93,INVALID_FORMAT,timestamp,Wrong date format
-transactions.csv,T95,NULL_VALUE,amount,Amount missing
-transactions.csv,T97,NEGATIVE_VALUE,amount,Amount negative
-transactions.csv,T110,NEGATIVE_VALUE,amount,Amount negative
-transactions.csv,T111,NEGATIVE_VALUE,amount,Amount negative
-transactions.csv,T112,NEGATIVE_VALUE,amount,Amount negative
-transactions.csv,T119,NEGATIVE_VALUE,amount,Amount negative
-transactions.csv,T122,NEGATIVE_VALUE,amount,Amount negative
-transactions.csv,T125,NEGATIVE_VALUE,amount,Amount negative
-transactions.csv,T134,NEGATIVE_VALUE,amount,Amount negative
-transactions.csv,T143,NULL_VALUE,amount,Amount missing
-transactions.csv,T166,NEGATIVE_VALUE,amount,Amount negative
-transactions.csv,T185,NULL_VALUE,amount,Amount missing
-transactions.csv,T185,NEGATIVE_VALUE,amount,Amount negative
-transactions.csv,T188,NEGATIVE_VALUE,amount,Amount negative
-transactions.csv,T200,NEGATIVE_VALUE,amount,Amount negative
-transactions.csv,T209,NULL_VALUE,amount,Amount missing
-transactions.csv,T209,INVALID_FORMAT,timestamp,Wrong date format
-transactions.csv,T211,INVALID_FORMAT,timestamp,Wrong date format
-transactions.csv,T216,NEGATIVE_VALUE,amount,Amount negative
-transactions.csv,T217,NEGATIVE_VALUE,amount,Amount negative
-transactions.csv,T227,NEGATIVE_VALUE,amount,Amount negative
-transactions.csv,T228,NEGATIVE_VALUE,amount,Amount negative
-transactions.csv,T233,INVALID_FORMAT,timestamp,Wrong date format
-transactions.csv,T236,NULL_VALUE,amount,Amount missing
-transactions.csv,T237,NULL_VALUE,amount,Amount missing
-transactions.csv,T244,NULL_VALUE,amount,Amount missing
-transactions.csv,T249,INVALID_FORMAT,timestamp,Wrong date format
-transactions.csv,T254,NULL_VALUE,amount,Amount missing
-transactions.csv,T256,NEGATIVE_VALUE,amount,Amount negative
-transactions.csv,T258,INVALID_FORMAT,timestamp,Wrong date format
-transactions.csv,T266,NULL_VALUE,amount,Amount missing
+transactions.csv,T9,INVALID_FORMAT,timestamp,Wrong date format
+transactions.csv,T13,NULL_VALUE,amount,Amount missing
+transactions.csv,T14,INVALID_FORMAT,timestamp,Wrong date format
+transactions.csv,T46,INVALID_FORMAT,timestamp,Wrong date format
+transactions.csv,T65,NULL_VALUE,amount,Amount missing
+transactions.csv,T112,INVALID_FORMAT,timestamp,Wrong date format
+transactions.csv,T142,NULL_VALUE,amount,Amount missing
+transactions.csv,T146,NEGATIVE_VALUE,amount,Amount negative
+transactions.csv,T147,INVALID_FORMAT,timestamp,Wrong date format
+transactions.csv,T148,NULL_VALUE,amount,Amount missing
+transactions.csv,T169,INVALID_FORMAT,timestamp,Wrong date format
+transactions.csv,T172,INVALID_FORMAT,timestamp,Wrong date format
+transactions.csv,T180,INVALID_FORMAT,timestamp,Wrong date format
+transactions.csv,T194,INVALID_FORMAT,timestamp,Wrong date format
+transactions.csv,T238,NULL_VALUE,amount,Amount missing
+transactions.csv,T240,NULL_VALUE,amount,Amount missing
+transactions.csv,T250,NULL_VALUE,amount,Amount missing
+transactions.csv,T261,INVALID_FORMAT,timestamp,Wrong date format
+transactions.csv,T263,NEGATIVE_VALUE,amount,Amount negative
+transactions.csv,T264,NEGATIVE_VALUE,amount,Amount negative
 transactions.csv,T268,NEGATIVE_VALUE,amount,Amount negative
-transactions.csv,T269,NULL_VALUE,amount,Amount missing
-transactions.csv,T272,INVALID_FORMAT,timestamp,Wrong date format
-transactions.csv,T275,NULL_VALUE,amount,Amount missing
-transactions.csv,T292,NULL_VALUE,amount,Amount missing
-transactions.csv,T308,INVALID_FORMAT,timestamp,Wrong date format
-transactions.csv,T311,INVALID_FORMAT,timestamp,Wrong date format
-transactions.csv,T314,INVALID_FORMAT,timestamp,Wrong date format
-transactions.csv,T322,NEGATIVE_VALUE,amount,Amount negative
-transactions.csv,T330,NEGATIVE_VALUE,amount,Amount negative
-transactions.csv,T331,NULL_VALUE,amount,Amount missing
-transactions.csv,T333,NULL_VALUE,amount,Amount missing
-transactions.csv,T336,NEGATIVE_VALUE,amount,Amount negative
-transactions.csv,T337,NEGATIVE_VALUE,amount,Amount negative
-transactions.csv,T341,INVALID_FORMAT,timestamp,Wrong date format
-transactions.csv,T353,INVALID_FORMAT,timestamp,Wrong date format
-transactions.csv,T388,NULL_VALUE,amount,Amount missing
-transactions.csv,T404,NULL_VALUE,amount,Amount missing
-transactions.csv,T409,NULL_VALUE,amount,Amount missing
-transactions.csv,T426,NULL_VALUE,amount,Amount missing
-transactions.csv,T427,NEGATIVE_VALUE,amount,Amount negative
-transactions.csv,T454,NEGATIVE_VALUE,amount,Amount negative
-transactions.csv,T472,NEGATIVE_VALUE,amount,Amount negative
-transactions.csv,T484,NEGATIVE_VALUE,amount,Amount negative
-transactions.csv,T487,NULL_VALUE,amount,Amount missing
-transactions.csv,T489,NULL_VALUE,amount,Amount missing
-transactions.csv,T489,INVALID_FORMAT,timestamp,Wrong date format
-transactions.csv,T497,NEGATIVE_VALUE,amount,Amount negative
-transactions.csv,T502,NEGATIVE_VALUE,amount,Amount negative
-transactions.csv,T516,NULL_VALUE,amount,Amount missing
-transactions.csv,T518,NULL_VALUE,amount,Amount missing
-transactions.csv,T525,NEGATIVE_VALUE,amount,Amount negative
-transactions.csv,T531,NULL_VALUE,amount,Amount missing
-transactions.csv,T532,NULL_VALUE,amount,Amount missing
-transactions.csv,T541,NEGATIVE_VALUE,amount,Amount negative
-transactions.csv,T549,NEGATIVE_VALUE,amount,Amount negative
-transactions.csv,T551,NULL_VALUE,amount,Amount missing
-transactions.csv,T552,NULL_VALUE,amount,Amount missing
-transactions.csv,T553,NEGATIVE_VALUE,amount,Amount negative
-transactions.csv,T556,NULL_VALUE,amount,Amount missing
-transactions.csv,T557,INVALID_FORMAT,timestamp,Wrong date format
+transactions.csv,T294,INVALID_FORMAT,timestamp,Wrong date format
+transactions.csv,T297,NULL_VALUE,amount,Amount missing
+transactions.csv,T302,INVALID_FORMAT,timestamp,Wrong date format
+transactions.csv,T315,NEGATIVE_VALUE,amount,Amount negative
+transactions.csv,T334,NULL_VALUE,amount,Amount missing
+transactions.csv,T343,INVALID_FORMAT,timestamp,Wrong date format
+transactions.csv,T382,INVALID_FORMAT,timestamp,Wrong date format
+transactions.csv,T385,INVALID_FORMAT,timestamp,Wrong date format
+transactions.csv,T393,NEGATIVE_VALUE,amount,Amount negative
+transactions.csv,T416,INVALID_FORMAT,timestamp,Wrong date format
+transactions.csv,T418,INVALID_FORMAT,timestamp,Wrong date format
+transactions.csv,T438,INVALID_FORMAT,timestamp,Wrong date format
+transactions.csv,T454,INVALID_FORMAT,timestamp,Wrong date format
+transactions.csv,T461,INVALID_FORMAT,timestamp,Wrong date format
+transactions.csv,T473,NEGATIVE_VALUE,amount,Amount negative
+transactions.csv,T494,NULL_VALUE,amount,Amount missing
+transactions.csv,T505,INVALID_FORMAT,timestamp,Wrong date format
+transactions.csv,T507,NEGATIVE_VALUE,amount,Amount negative
+transactions.csv,T516,NEGATIVE_VALUE,amount,Amount negative
+transactions.csv,T527,INVALID_FORMAT,timestamp,Wrong date format
+transactions.csv,T563,INVALID_FORMAT,timestamp,Wrong date format
 transactions.csv,T589,NULL_VALUE,amount,Amount missing
-transactions.csv,T595,NULL_VALUE,amount,Amount missing
-transactions.csv,T596,NEGATIVE_VALUE,amount,Amount negative
-transactions.csv,T614,NULL_VALUE,amount,Amount missing
-transactions.csv,T615,NEGATIVE_VALUE,amount,Amount negative
-transactions.csv,T623,NEGATIVE_VALUE,amount,Amount negative
-transactions.csv,T623,INVALID_FORMAT,timestamp,Wrong date format
-transactions.csv,T624,NULL_VALUE,amount,Amount missing
-transactions.csv,T626,NEGATIVE_VALUE,amount,Amount negative
-transactions.csv,T627,INVALID_FORMAT,timestamp,Wrong date format
-transactions.csv,T628,INVALID_FORMAT,timestamp,Wrong date format
-transactions.csv,T645,NULL_VALUE,amount,Amount missing
-transactions.csv,T659,INVALID_FORMAT,timestamp,Wrong date format
-transactions.csv,T670,NULL_VALUE,amount,Amount missing
-transactions.csv,T671,NEGATIVE_VALUE,amount,Amount negative
-transactions.csv,T685,NULL_VALUE,amount,Amount missing
-transactions.csv,T697,NEGATIVE_VALUE,amount,Amount negative
-transactions.csv,T718,NEGATIVE_VALUE,amount,Amount negative
-transactions.csv,T722,INVALID_FORMAT,timestamp,Wrong date format
-transactions.csv,T723,NEGATIVE_VALUE,amount,Amount negative
-transactions.csv,T742,NULL_VALUE,amount,Amount missing
-transactions.csv,T759,NEGATIVE_VALUE,amount,Amount negative
-transactions.csv,T767,INVALID_FORMAT,timestamp,Wrong date format
-transactions.csv,T770,NULL_VALUE,amount,Amount missing
-transactions.csv,T774,INVALID_FORMAT,timestamp,Wrong date format
-transactions.csv,T780,INVALID_FORMAT,timestamp,Wrong date format
-transactions.csv,T785,NEGATIVE_VALUE,amount,Amount negative
-transactions.csv,T794,NULL_VALUE,amount,Amount missing
-transactions.csv,T800,NEGATIVE_VALUE,amount,Amount negative
-transactions.csv,T802,NEGATIVE_VALUE,amount,Amount negative
-transactions.csv,T804,NEGATIVE_VALUE,amount,Amount negative
-transactions.csv,T804,INVALID_FORMAT,timestamp,Wrong date format
-transactions.csv,T814,NULL_VALUE,amount,Amount missing
-transactions.csv,T818,NEGATIVE_VALUE,amount,Amount negative
-transactions.csv,T819,NEGATIVE_VALUE,amount,Amount negative
-transactions.csv,T831,NEGATIVE_VALUE,amount,Amount negative
-transactions.csv,T838,INVALID_FORMAT,timestamp,Wrong date format
-transactions.csv,T849,NULL_VALUE,amount,Amount missing
-transactions.csv,T854,INVALID_FORMAT,timestamp,Wrong date format
-transactions.csv,T883,NEGATIVE_VALUE,amount,Amount negative
-transactions.csv,T889,NULL_VALUE,amount,Amount missing
-transactions.csv,T907,NEGATIVE_VALUE,amount,Amount negative
-transactions.csv,T913,NEGATIVE_VALUE,amount,Amount negative
-transactions.csv,T916,NULL_VALUE,amount,Amount missing
-transactions.csv,T918,NEGATIVE_VALUE,amount,Amount negative
-transactions.csv,T919,NEGATIVE_VALUE,amount,Amount negative
-transactions.csv,T923,NEGATIVE_VALUE,amount,Amount negative
-transactions.csv,T949,INVALID_FORMAT,timestamp,Wrong date format
-transactions.csv,T950,NULL_VALUE,amount,Amount missing
-transactions.csv,T953,NEGATIVE_VALUE,amount,Amount negative
-transactions.csv,T968,NEGATIVE_VALUE,amount,Amount negative
-transactions.csv,T970,INVALID_FORMAT,timestamp,Wrong date format
-transactions.csv,T984,INVALID_FORMAT,timestamp,Wrong date format
-transactions.csv,T987,NEGATIVE_VALUE,amount,Amount negative
-transactions.csv,T995,NULL_VALUE,amount,Amount missing
-transactions.csv,T361,DUPLICATE,transaction_id,Duplicate record
-transactions.csv,T821,DUPLICATE,transaction_id,Duplicate record
-transactions.csv,T667,DUPLICATE,transaction_id,Duplicate record
-transactions.csv,T360,DUPLICATE,transaction_id,Duplicate record
-transactions.csv,T702,DUPLICATE,transaction_id,Duplicate record
-transactions.csv,T43,DUPLICATE,transaction_id,Duplicate record
-transactions.csv,T270,DUPLICATE,transaction_id,Duplicate record
-transactions.csv,T932,DUPLICATE,transaction_id,Duplicate record
-transactions.csv,T454,DUPLICATE,transaction_id,Duplicate record
-transactions.csv,T461,DUPLICATE,transaction_id,Duplicate record
-transactions.csv,T942,DUPLICATE,transaction_id,Duplicate record
-transactions.csv,T314,DUPLICATE,transaction_id,Duplicate record
-transactions.csv,T374,DUPLICATE,transaction_id,Duplicate record
-transactions.csv,T452,DUPLICATE,transaction_id,Duplicate record
-transactions.csv,T45,DUPLICATE,transaction_id,Duplicate record
-transactions.csv,T458,DUPLICATE,transaction_id,Duplicate record
-transactions.csv,T309,DUPLICATE,transaction_id,Duplicate record
-transactions.csv,T282,DUPLICATE,transaction_id,Duplicate record
-transactions.csv,T622,DUPLICATE,transaction_id,Duplicate record
-transactions.csv,T78,DUPLICATE,transaction_id,Duplicate record
+transactions.csv,T591,NULL_VALUE,amount,Amount missing
+transactions.csv,T611,NULL_VALUE,amount,Amount missing
+transactions.csv,T622,INVALID_FORMAT,timestamp,Wrong date format
+transactions.csv,T626,INVALID_FORMAT,timestamp,Wrong date format
+transactions.csv,T632,NEGATIVE_VALUE,amount,Amount negative
+transactions.csv,T635,NEGATIVE_VALUE,amount,Amount negative
+transactions.csv,T661,INVALID_FORMAT,timestamp,Wrong date format
+transactions.csv,T683,NULL_VALUE,amount,Amount missing
+transactions.csv,T708,NULL_VALUE,amount,Amount missing
+transactions.csv,T730,NULL_VALUE,amount,Amount missing
+transactions.csv,T755,NULL_VALUE,amount,Amount missing
+transactions.csv,T758,INVALID_FORMAT,timestamp,Wrong date format
+transactions.csv,T763,NEGATIVE_VALUE,amount,Amount negative
+transactions.csv,T779,INVALID_FORMAT,timestamp,Wrong date format
+transactions.csv,T782,INVALID_FORMAT,timestamp,Wrong date format
+transactions.csv,T789,NULL_VALUE,amount,Amount missing
+transactions.csv,T790,NULL_VALUE,amount,Amount missing
+transactions.csv,T795,NEGATIVE_VALUE,amount,Amount negative
+transactions.csv,T798,INVALID_FORMAT,timestamp,Wrong date format
+transactions.csv,T803,NEGATIVE_VALUE,amount,Amount negative
+transactions.csv,T830,INVALID_FORMAT,timestamp,Wrong date format
+transactions.csv,T840,INVALID_FORMAT,timestamp,Wrong date format
+transactions.csv,T849,INVALID_FORMAT,timestamp,Wrong date format
+transactions.csv,T874,INVALID_FORMAT,timestamp,Wrong date format
+transactions.csv,T883,INVALID_FORMAT,timestamp,Wrong date format
+transactions.csv,T891,INVALID_FORMAT,timestamp,Wrong date format
+transactions.csv,T903,INVALID_FORMAT,timestamp,Wrong date format
+transactions.csv,T928,INVALID_FORMAT,timestamp,Wrong date format
+transactions.csv,T976,NEGATIVE_VALUE,amount,Amount negative
+transactions.csv,T981,NULL_VALUE,amount,Amount missing
+transactions.csv,T989,NEGATIVE_VALUE,amount,Amount negative
+transactions.csv,T405,DUPLICATE,transaction_id,Duplicate record
+transactions.csv,T304,DUPLICATE,transaction_id,Duplicate record
+transactions.csv,T594,DUPLICATE,transaction_id,Duplicate record
+transactions.csv,T532,DUPLICATE,transaction_id,Duplicate record
+transactions.csv,T953,DUPLICATE,transaction_id,Duplicate record
+transactions.csv,T427,DUPLICATE,transaction_id,Duplicate record
+transactions.csv,T308,DUPLICATE,transaction_id,Duplicate record
+transactions.csv,T937,DUPLICATE,transaction_id,Duplicate record
+transactions.csv,T286,DUPLICATE,transaction_id,Duplicate record
+transactions.csv,T807,DUPLICATE,transaction_id,Duplicate record
+transactions.csv,T654,DUPLICATE,transaction_id,Duplicate record
+transactions.csv,T443,DUPLICATE,transaction_id,Duplicate record
+transactions.csv,T558,DUPLICATE,transaction_id,Duplicate record
+transactions.csv,T98,DUPLICATE,transaction_id,Duplicate record
+transactions.csv,T400,DUPLICATE,transaction_id,Duplicate record
+transactions.csv,T871,DUPLICATE,transaction_id,Duplicate record
+transactions.csv,T341,DUPLICATE,transaction_id,Duplicate record
+transactions.csv,T826,DUPLICATE,transaction_id,Duplicate record
+transactions.csv,T820,DUPLICATE,transaction_id,Duplicate record
+transactions.csv,T644,DUPLICATE,transaction_id,Duplicate record

@@ -4,10 +4,14 @@ from datetime import datetime, timedelta
 
 # -----------------------------
 # MASTER DATA
-# -----------------------------
-cards = ["C101","C102","C103","C104","C105"]
-vehicles = ["V201","V202","V203","V204","V205"]
-drivers = ["D001","D002","D003","D004","D005"]
+# # -----------------------------
+# same cards used here ,so distribute it even more
+# cards = ["C101","C102","C103","C104","C105"]
+# vehicles = ["V201","V202","V203","V204","V205"]
+# drivers = ["D001","D002","D003","D004","D005"]
+cards = [f"C{100+i}" for i in range(50)]
+vehicles = [f"V{200+i}" for i in range(50)]
+drivers = [f"D{100+i}" for i in range(50)]
 locations = ["Chennai","Bangalore","Mumbai"]
 merchant_types = ["fuel","toll"]
 
@@ -20,16 +24,20 @@ for i in range(len(cards)):
         cards[i],
         drivers[i],
         vehicles[i],
-        random.choice([4000,5000,6000,7000]),
-        random.choice(["active","blocked"]),
+        
+        # random.choice([4000,5000,6000,7000]),increase this daily limit to generate more high amount transactions which generates more risk
+        random.choice([5000,7000,10000,15000]),
+        # this gives too many blocked cards like 50%, so fixing this skewed data by including weighs to include less than 20 percent blocked cards
+        # random.choice(["active","blocked"]),
+        (random.choices(["active","blocked"], weights=[0.8, 0.2])[0]),
         random.choice(locations)
     ])
 
 card_master_df = pd.DataFrame(card_master_data, columns=[
     "card_id","driver_id","vehicle_id","daily_limit","card_status","home_location"
 ])
-
-card_master_df.to_csv("./data/card_master.csv", index=False)
+card_vehicle_map = dict(zip(card_master_df["card_id"], card_master_df["vehicle_id"]))
+card_master_df.to_csv("../data/card_master.csv", index=False)
 
 # -----------------------------
 # 2. TRANSACTIONS
@@ -40,21 +48,26 @@ errors = []
 for i in range(1000):
     transaction_id = f"T{i}"
     card_id = random.choice(cards)
-    vehicle_id = random.choice(vehicles)
+    vehicle_id = card_vehicle_map[card_id]
     timestamp = datetime.now() - timedelta(minutes=random.randint(0, 10000))
     location = random.choice(locations)
     merchant = random.choice(merchant_types)
-    amount = random.choice([100,200,500,2500,5000,15000])
+    amount = random.choices(
+    [100,200,500,2500,5000,15000],
+    weights=[30,25,20,15,7,3]   # 🔥 mostly small amounts
+)[0]
+    # //this generates high amount ,which generates high risk,add weights here
+    # random.choice([100,200,500,2500,5000,15000])
     status = random.choice(["success","failed"])
 
     # ---- Inject Errors ----
     # NULL amount
-    if random.random() < 0.05:
+    if random.random() < 0.02:
         amount = None
         errors.append(["transactions.csv", transaction_id, "NULL_VALUE", "amount", "Amount missing"])
 
     # Negative amount
-    if random.random() < 0.05:
+    if random.random() < 0.02:
         amount = -500
         errors.append(["transactions.csv", transaction_id, "NEGATIVE_VALUE", "amount", "Amount negative"])
 
@@ -79,7 +92,7 @@ transactions_df = pd.DataFrame(transactions, columns=[
     "location","merchant_type","amount","status"
 ])
 
-transactions_df.to_csv("./data/transactions.csv", index=False)
+transactions_df.to_csv("../data/transactions.csv", index=False)
 
 # -----------------------------
 # 3. PIN LOGS
@@ -90,7 +103,8 @@ for i in range(300):
     log_id = f"L{i}"
     card_id = random.choice(cards)
     timestamp = datetime.now() - timedelta(minutes=random.randint(0, 10000))
-    attempts = random.choice([1,2,3,4])
+    attempts =  random.choices([1,2,3,4], weights=[50,30,15,5])[0]
+    # pin failures increase without weights contributing to high riskrandom.choice([1,2,3,4])
     status = "failed" if attempts >= 3 else "success"
 
     pin_logs.append([log_id, card_id, timestamp, attempts, status])
@@ -99,7 +113,7 @@ pin_df = pd.DataFrame(pin_logs, columns=[
     "log_id","card_id","timestamp","attempt_count","status"
 ])
 
-pin_df.to_csv("./data/pin_logs.csv", index=False)
+pin_df.to_csv("../data/pin_logs.csv", index=False)
 
 # -----------------------------
 # 4. SOURCE ERRORS
@@ -108,6 +122,6 @@ errors_df = pd.DataFrame(errors, columns=[
     "file_name","record_id","error_type","column_name","description"
 ])
 
-errors_df.to_csv("./data/source_errors.csv", index=False)
+errors_df.to_csv("../data/source_errors.csv", index=False)
 
 print("✅ All datasets generated successfully!")

@@ -4,13 +4,13 @@ import "./App.css";
 function App() {
   const [risks, setRisks] = useState([]);
   const [selected, setSelected] = useState(null);
-  const [filtered,setfiltered] = useState([]);
+  const [filtered,setFiltered] = useState([]);
   useEffect(() => {
     fetch("http://localhost:8080/api/risk/all")
       .then((res) => res.json())
       .then((data) => {
        setRisks(data);
-       setfiltered(data);
+       setFiltered(data);
 
       })
       .catch((err) => console.error(err));

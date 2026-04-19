@@ -21,7 +21,7 @@ def detect_risks(transactions, pin_logs, card_master):
     # 1. HIGH AMOUNT
     # -----------------------------
     for _, row in transactions.iterrows():
-        if pd.notnull(row["amount"]) and row["amount"] > 10000:
+        if pd.notnull(row["amount"]) and row["amount"] > 8000:
             add_risk(row["transaction_id"], "HIGH_AMOUNT", 30)
 
     # -----------------------------
@@ -62,7 +62,7 @@ def detect_risks(transactions, pin_logs, card_master):
             if pd.notnull(curr["timestamp"]) and pd.notnull(prev["timestamp"]):
                 diff = (curr["timestamp"] - prev["timestamp"]).seconds
                 if diff < 60:
-                    add_risk(curr["transaction_id"], "RAPID_TOLL", 40)
+                    add_risk(curr["transaction_id"], "RAPID_TOLL", 20)
 
     # -----------------------------
     # 6. LOCATION ANOMALY

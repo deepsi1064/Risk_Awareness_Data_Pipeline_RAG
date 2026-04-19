@@ -1,0 +1,5 @@
+com\risk\backend\service\RiskService.class
+com\risk\backend\model\Risk.class
+com\risk\backend\controller\RiskController.class
+com\risk\backend\RiskBackendApplication.class
+com\risk\backend\util\PythonExecutor.class

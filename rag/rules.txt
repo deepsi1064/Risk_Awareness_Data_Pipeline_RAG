@@ -1,0 +1,13 @@
+HIGH_AMOUNT: Transaction amount exceeds 10000, indicating possible fraud or unusual behavior.
+
+PIN_FAILURE: Multiple failed PIN attempts detected, indicating possible unauthorized access.
+
+NIGHT_TRANSACTION: Transaction occurred during unusual hours (midnight to early morning).
+
+BLOCKED_CARD: Transaction attempted using a blocked card, violating compliance rules.
+
+RAPID_TOLL: Multiple toll transactions within short time, indicating suspicious activity.
+
+LOCATION_ANOMALY: Same card used in different locations within a short time, indicating impossible travel.
+
+LIMIT_BREACH: Total daily spending exceeded allowed limit for the card.

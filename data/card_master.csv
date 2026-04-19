@@ -1,0 +1,6 @@
+card_id,driver_id,vehicle_id,daily_limit,card_status,home_location
+C101,D001,V201,6000,active,Chennai
+C102,D002,V202,6000,blocked,Bangalore
+C103,D003,V203,4000,blocked,Mumbai
+C104,D004,V204,4000,blocked,Mumbai
+C105,D005,V205,6000,blocked,Chennai
